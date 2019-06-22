@@ -84,5 +84,6 @@ void listar (ListaDupla *lista) {
     do {
         printf("%d ", aux->dado);
         aux = aux->proximo;
-    } while (aux->proximo != NULL);
+    } while (aux != NULL);
+    printf("\n");
 }

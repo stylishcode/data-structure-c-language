@@ -1,7 +1,7 @@
 struct tipo_no_duplo {
     int dado;
-    struct tipo_no *proximo;
-    struct tipo_no *anterior;
+    struct tipo_no_duplo *proximo;
+    struct tipo_no_duplo *anterior;
 };
 typedef struct tipo_no_duplo No;
 

@@ -94,10 +94,10 @@ void listar (struct Lista lista) {
         exit(1);
     } else {
         struct Caixinha *aux = lista.inicio;
-        while (aux != NULL) {
+        do {
             printf("%d ", aux->elemento);
             aux = aux->proximo;
-        }
+        } while (aux->proximo != NULL);
         printf("\n");
     }
 }
